@@ -93,6 +93,7 @@ header {
 
 .card {
   background-color: var(--color-rocket);
+  cursor: pointer;
 }
 
 .card-image-container img {
@@ -125,6 +126,8 @@ header {
   width: 100%;
   height: 100%;
   top: 0px;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .modal {
@@ -141,4 +144,10 @@ header {
   top: 8px;
   right: 8px;
   cursor: pointer;
+}
+
+/* Modal ativo */
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
